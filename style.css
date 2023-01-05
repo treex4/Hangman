@@ -1,0 +1,121 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(95,117,142);
+}
+
+.whole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    font-family: Lalezar, Arial;
+    color: rgb(245,245,245);
+    background-color: transparent;
+    border-radius: 3px;
+    border: 2px solid rgb(245,245,245);
+    margin: 5px;
+}
+
+span {
+    font-family: Lalezar;
+}
+
+/* header */
+.header {
+    font-family: Lalezar, Arial;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.lives {
+    display: flex;
+    margin: 20px auto 20px 20px;
+    align-items: center;
+}
+
+.life {
+    height: 30px;
+    width: 50px;
+    background-color: transparent;
+    border: 2px solid rgb(245,245,245);
+}
+
+#lives--count {
+    color: rgb(245,245,245);
+    font-size: 25px;
+    margin: 0 0 0 20px;
+}
+
+.reveal {
+    font-size: 20px;
+    margin: 20px 10px 20px 20px;
+}
+
+.new-word {
+    font-size: 20px;
+    margin: 20px 20px 20px 10px;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+}
+
+.hangman {
+  color: rgb(245,245,245);
+  font-family: Lalezar, Arial;
+  font-size: 100px;
+  margin: 60px 0 0 0;
+}
+
+.word {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.letter {
+    height: 80px;
+    width: 50px;
+    margin: 20px;
+    border-bottom: 5px solid rgb(245,245,245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.let {
+    color: rgb(245,245,245);
+    font-size: 60px;
+}
+
+.half {
+    display: flex;
+}
+
+.alphabet {
+    font-size: 30px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alphabet:active {
+  color:rgb(95,117,142);
+}
+
+.chosen {
+/*   visibility: hidden; */
+  opacity: 50%;
+  pointer-events: none;
+  cursor: not-allowed;
+}

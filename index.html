@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Hangman</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <div class="whole">
+    <div class="header">
+      <!-- lives -->
+      <div id="lives" class="lives">
+        <span class="life"></span>
+        <span class="life"></span>
+        <span class="life"></span>
+        <span class="life"></span>
+        <span class="life"></span>
+        <span class="life"></span>
+        <h3 id="lives--count"></h3>
+      </div>
+
+      <!-- reveal -->
+      <button id="reveal" class="reveal">REVEAL</button>
+
+      <!-- new word -->
+      <button id="new-word" class="new-word">NEW WORD</button>
+
+    </div>
+
+    <div class="footer">
+      <!-- logo -->
+      <p class="hangman">HANGMAN</p>
+
+      <!-- word -->
+      <div id="word" class="word"></div>
+
+      <!-- alphabet buttons -->
+      <div id="alpha" class="alpha">
+        <div id="half1" class="half"></div>
+        <div id="half2" class="half"></div>
+      </div>
+    </div>
+
+    <!-- lose -->
+    <div></div>
+  </div>
+</body>
+
+</html>
